@@ -1,5 +1,5 @@
 <template>
-    <div :class="['sidebar flex flex-col justify-start h-screen bg-[#001d3d] items-center', isOpen ? 'w-45 items-start' : 'w-14']">
+    <div :class="['sidebar flex flex-col justify-start bg-[#001d3d] items-center rounded-md grow shadow-md', isOpen ? 'w-45 items-start' : 'w-14']">
         <div @click="onExpandClick" class="nav-item">
             <i :class="isOpen ? 'pi pi-arrow-left icon' : 'pi pi-bars icon'"></i>
         </div>
