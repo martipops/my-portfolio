@@ -1,9 +1,9 @@
 <template>
-  <div class="w-full flex flex-col min-h-screen p-1 bg-[#000c1d] items-center">
-    <h1 class="text-6xl text-[#ffd60a] text-center pb-12 pt-12 font-bold!">
+  <div class="w-full flex flex-col py-24 px-12 bg-[#000c1d] items-center min-h-screen justify-center">
+    <h1 class="text-6xl text-[#ffd60a] text-center pb-12 font-bold!">
       My Projects
     </h1>
-    <div class="flex flex-wrap justify-center gap-12 w-full max-w-7xl">
+    <div class="flex flex-wrap justify-center gap-12 w-full">
       <ProjectCard
         v-for="project in projectList"
         :key="project.title"

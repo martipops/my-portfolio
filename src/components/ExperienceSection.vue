@@ -1,10 +1,10 @@
 <template>
-  <div class="h-screen flex justify-center items-center">
-    <div class="flex flex-col gap-5 h-3/4 w-3/4 bg-[#001d3d] rounded-lg p-10">
+  <div class="flex justify-center items-center p-24 min-h-screen">
+    <div class="flex flex-col gap-5 bg-[#001d3d] rounded-lg p-10">
       <h1 class="text-6xl font-bold! text-[#ffd60a] text-center">My Experience</h1>
       <hr class="border-[#ffd60a33]">
 
-      <div class="flex gap-6">
+      <div class="flex flex-col lg:flex-row gap-6">
         <div v-for="job in experience" :key="job.title" class="flex flex-col gap-3 flex-1 bg-[#000814] rounded-lg p-5 border border-[#ffd60a18] hover:border-[#ffd60a44] transition-colors duration-200">
           <img :src="job.image" :alt="job.title" class="w-16 h-16 rounded-full object-cover border-2 border-[#ffd60a44]" />
           <div>
